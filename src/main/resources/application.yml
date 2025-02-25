@@ -12,7 +12,7 @@ spring:
     show-sql: true
 
 server:
-  port: ${PORT:8080}
+  port: ${PORT}
 
 jwt:
   secret: ${JWT_SECRET:default_jwt_secret_key_which_is_very_long_and_secure}
