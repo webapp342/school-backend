@@ -1,10 +1,11 @@
 spring:
   datasource:
-    url: jdbc:${MYSQL_URL}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${MYSQL_URL}
+    username: root
+    password: ${MYSQL_ROOT_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
