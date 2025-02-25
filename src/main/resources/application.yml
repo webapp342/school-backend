@@ -1,11 +1,12 @@
 spring:
   datasource:
-    url: ${MYSQL_URL}
+    url: jdbc:mysql://mysql.railway.internal:3306/railway
     username: root
     password: ${MYSQL_ROOT_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
